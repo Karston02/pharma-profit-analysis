@@ -16,7 +16,7 @@ def d_or_w(day_or_week):
 
 
 # list of tickers to download
-tickers = ['LLY', 'NVO', 'JNJ', 'MRK', 'ABBV',
+tickers = ['LLY', 'NVO', 'JNJ', 'MRK', 'ABBV', 'MRNA',
            'NVS', 'AZN', 'PFE', 'AMGN', 'PPH', 'IHE', 'PJP']
 tickers.sort()
 left = len(tickers)
