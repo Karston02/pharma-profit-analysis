@@ -47,9 +47,11 @@ for symbol in tickers:
             # edit to change timeframe
             data_day = yf.download(
                 # change period to get specific data, or interval for different timeframe
-                symbol, period="1044d", interval="1d", progress=False)
-            Path('pharma-data/day').mkdir(parents=True, exist_ok=True)
-            data_day.to_pickle('pharma-data/day/'+symbol+'.pkl')
+                symbol, period="3000d", interval="1d", progress=False)
+            Path(
+                'pharma-data/raw-data/stocks-for-overdose').mkdir(parents=True, exist_ok=True)
+            data_day.to_pickle(
+                'pharma-data/raw-data/stocks-for-overdose/'+symbol+'.pkl')
             print('Saved Daily: '+symbol+'.pkl')
             time.sleep(2)
 
