@@ -6,10 +6,10 @@ import time
 from datetime import datetime
 
 
-def d_or_w(day_or_week):
-    if day_or_week == '' or day_or_week == 'b':
+def timeframe_picker(choice):
+    if choice == '' or choice == 'b':
         return 'both'
-    elif day_or_week == 'd':
+    elif choice == 'd':
         return 'day'
     else:
         return 'week'
@@ -23,15 +23,15 @@ left = len(tickers)
 
 # check if user input is valid
 try:
-    day_or_week = sys.argv[1]
-    print('day_or_week', day_or_week)
+    choice = sys.argv[1]
+    print('choice', choice)
 # if not, ask for input
 except:
-    day_or_week = input('\n\nd or w candles? (or \'b\' for both)\n\n')
-day_or_week = d_or_w(day_or_week)
+    choice = input('\n\nd or w candles? (or \'b\' for both)\n\n')
+choice = timeframe_picker(choice)
 
 # download data
-print("Downloading "+day_or_week+" candles:")
+print("Downloading "+choice+" candles:")
 
 # get current time
 current_time = datetime.now()
@@ -43,7 +43,7 @@ print(f"Time Started: {time_formatted}, {date_formatted}")
 for symbol in tickers:
     symbol = symbol.strip()
     try:
-        if day_or_week == 'day' or day_or_week == 'both':
+        if choice == 'day' or choice == 'both':
             # edit to change timeframe
             data_day = yf.download(
                 # change period to get specific data, or interval for different timeframe
@@ -55,7 +55,7 @@ for symbol in tickers:
             print('Saved Daily: '+symbol+'.pkl')
             time.sleep(2)
 
-        if day_or_week == 'week' or day_or_week == 'both':
+        if choice == 'week' or choice == 'both':
             # edit to change timeframe
             data_week = yf.download(
                 symbol, period="800wk", interval="1wk", progress=False)
@@ -70,7 +70,7 @@ for symbol in tickers:
     # print how many tickers are left to download
     left = left - 1
     print(str(left)+' tickers left')
-print('\n\n----- Finished downloading '+day_or_week+' candles: -----\n\n')
+print('\n\n----- Finished downloading '+choice+' candles: -----\n\n')
 current_time = datetime.now()
 time_formatted = current_time.strftime("%I:%M %p")
 date_formatted = current_time.strftime("%b %d, %Y")
