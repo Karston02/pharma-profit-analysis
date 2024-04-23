@@ -1,0 +1,39 @@
+/* Dash looks for these styles in the /assets directory. All of this will be applied to the app. */
+body {
+    margin: 0;
+    background-color: #292929;
+    color: #fff
+}
+.header {
+    font-size: 36px;
+    text-align: center;
+    color: #ea2b61;
+}
+.subheader {
+    font-size: 28px;
+    text-align: center;
+}
+.section-header {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 15px;
+    color: #ea2b61;
+}
+.chart-wrapper {
+    margin: 0 auto;
+    width: 100%;
+}
+.chart {
+    height: 540px;
+    width: 100%;
+    margin-bottom: 30px;
+    border: none;
+}
+.list-item {
+    font-size: 24px;
+}
+.sublist-item {
+    font-size: 18px;
+}
