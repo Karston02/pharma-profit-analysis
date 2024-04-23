@@ -119,6 +119,8 @@ app.layout = html.Div(children=[
                 html.Li(children=[
                     "If COVID reactions can't be explained, how can something else?"], className='list-item'),
             ]),
+            html.Img(src='../assets/stonks.png', className='joke-pics'),
+            html.Img(src='../assets/notstonks.png', className='joke-pics'),
         ], className='conclusion-list'),
         html.Img(src='../assets/covid-stats.png', className='result-image'),
     ], className='conclusion-container'),
