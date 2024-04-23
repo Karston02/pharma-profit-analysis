@@ -104,22 +104,25 @@ app.layout = html.Div(children=[
     ########################
     # Conclusion & Results #
     ########################
-    html.H3(children='Conclusion & Results: ',
-            className='section-header'),
-    html.Ul(children=[
-        html.Li(children=[
-                'We cannot determine with confidence that pharmaceutical companies react in a specific way to any type of news. The market is seemingly speculative and reacts in unique ways. '], className='list-item'),
-        html.Ul(children=[
-            html.Li(children=[
-                    'test'], className='sublist-item'),
-            html.Li(children=[
-                    'continued'], className='sublist-item'),
-        ], className='list'),
-        html.Li(children=[
-                'Nature of "Priced in"'], className='list-item'),
-        html.Li(children=[
-                "If COVID reactions can't be explained, how can something else?"], className='list-item'),
-    ]),
+    html.H3(children='Conclusion & Results', className='section-header'),
+    html.Div(children=[
+        html.Div(children=[
+            html.Ul(children=[
+                html.Li(children=[
+                    'We cannot determine with confidence that pharmaceutical companies react in a specific way to any type of news. The market is seemingly speculative and reacts in unique ways. '], className='list-item'),
+                html.Ul(children=[
+                    html.Li(children=[
+                        'continued'], className='sublist-item'),
+                ], className='list'),
+                html.Li(children=[
+                    'Nature of "Priced in"'], className='list-item'),
+                html.Li(children=[
+                    "If COVID reactions can't be explained, how can something else?"], className='list-item'),
+            ]),
+        ], className='conclusion-list'),
+        html.Img(src='../assets/covid-stats.png', className='result-image'),
+    ], className='conclusion-container'),
+
 ], className='chart-wrapper')
 
 if __name__ == '__main__':

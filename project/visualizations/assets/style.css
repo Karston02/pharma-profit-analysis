@@ -58,3 +58,18 @@ body {
     font-size: 18px;
     padding-bottom: 6px;
 }
+.result-image {
+    border-radius: 3%;
+    margin: auto;
+    height: auto;
+    border-style: solid #fff;
+}
+.conclusion-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.conclusion-list {
+    flex-basis: 50%;
+    margin-right: 20px;
+}
