@@ -104,7 +104,7 @@ app.layout = html.Div(children=[
     ########################
     # Conclusion & Results #
     ########################
-    html.H3(children='Conclusion & Results', className='section-header'),
+    html.H3(children='Conclusion & Results', className='vis-header'),
     html.Div(children=[
         html.Div(children=[
             html.Ul(children=[
@@ -112,7 +112,7 @@ app.layout = html.Div(children=[
                     'We cannot determine with confidence that pharmaceutical companies react in a specific way to any type of news. The market is seemingly speculative and reacts in unique ways. '], className='list-item'),
                 html.Ul(children=[
                     html.Li(children=[
-                        'continued'], className='sublist-item'),
+                        'Correlation & Confidence ->'], className='sublist-item'),
                 ], className='list'),
                 html.Li(children=[
                     'Nature of "Priced in"'], className='list-item'),
