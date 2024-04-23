@@ -23,9 +23,9 @@ app.layout = html.Div(children=[
                 'Explore the impact of COVID-19 & overdoses on the pharmaceutical industry through:'], className='list-item'),
         html.Ul(children=[
             html.Li(children=[
-                    'Analyzing the impact on the performance of ETFs and different pharmaceutical stocks'], className='sublist-item'),
+                    'Analyzing the impact COVID deaths had on the performance of different pharmaceutical stocks'], className='sublist-item'),
             html.Li(children=[
-                    'Analyzing the relationship between drug overdoses and pharmaceutical market trends'], className='sublist-item'),
+                    'Analyzing the relationship between drug overdoses and pharmaceutical market trends - any significance?'], className='sublist-item'),
         ], className='list'),
         html.Li(children=[
                 'Vaccine producers will perform significantly better when compared to non-vaccine producing counterparts.'], className='list-item'),
@@ -36,6 +36,7 @@ app.layout = html.Div(children=[
     ###########
     # Chart 1 #
     ###########
+    html.H3(children='Visualization 1', className='vis-header'),
     html.Iframe(srcDoc=open("vis1.html").read(), id='graph1',
                 className='chart'),
     html.Ul(children=[
@@ -54,6 +55,7 @@ app.layout = html.Div(children=[
     ###########
     # Chart 2 #
     ###########
+    html.H3(children='Visualization 2', className='vis-header'),
     html.Iframe(srcDoc=open("vis2.html").read(), id='graph2',
                 className='special-chart'),
     html.Ul(children=[
@@ -65,6 +67,7 @@ app.layout = html.Div(children=[
     ###########
     # Chart 3 #
     ###########
+    html.H3(children='Visualization 3', className='vis-header'),
     html.Iframe(srcDoc=open("vis3.html").read(), id='graph3',
                 className='chart'),
     html.Ul(children=[
@@ -76,6 +79,7 @@ app.layout = html.Div(children=[
     ###########
     # Chart 4 #
     ###########
+    html.H3(children='Visualization 4', className='vis-header'),
     html.Iframe(srcDoc=open("vis4.html").read(), id='graph4',
                 className='special-chart'),
     html.Ul(children=[
@@ -88,12 +92,33 @@ app.layout = html.Div(children=[
     ###########
     # Chart 5 #
     ###########
+    html.H3(children='Visualization 5', className='vis-header'),
     html.Iframe(srcDoc=open("vis5.html").read(), id='graph5',
                 className='final-chart'),
     html.Ul(children=[
         html.Li(children=['sample item'], className='list-item'),
         html.Li(children=['sample item'], className='list-item'),
         html.Li(children=['sample item'], className='list-item'),
+    ]),
+
+    ########################
+    # Conclusion & Results #
+    ########################
+    html.H3(children='Conclusion & Results: ',
+            className='section-header'),
+    html.Ul(children=[
+        html.Li(children=[
+                'We cannot determine with confidence that pharmaceutical companies react in a specific way to any type of news. The market is seemingly speculative and reacts in unique ways. '], className='list-item'),
+        html.Ul(children=[
+            html.Li(children=[
+                    'test'], className='sublist-item'),
+            html.Li(children=[
+                    'continued'], className='sublist-item'),
+        ], className='list'),
+        html.Li(children=[
+                'Nature of "Priced in"'], className='list-item'),
+        html.Li(children=[
+                "If COVID reactions can't be explained, how can something else?"], className='list-item'),
     ]),
 ], className='chart-wrapper')
 
