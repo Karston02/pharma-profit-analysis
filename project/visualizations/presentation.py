@@ -86,11 +86,13 @@ app.layout = html.Div(children=[
     ###########
     html.H3(children='Visualization 4', className='vis-header'),
     html.Iframe(srcDoc=open("vis4.html").read(), id='graph4',
-                className='special-chart'),
+                className='chart'),
     html.Ul(children=[
-        html.Li(children=['sample item'], className='list-item'),
-        html.Li(children=['sample item'], className='list-item'),
-        html.Li(children=['sample item'], className='list-item'),
+        html.Li(children=[
+                'Covid deaths decreased as the MRNA stock rose to its peak around August 2021.'], className='list-item'),
+        html.Li(children=['We can make an informed guess regarding the reason behind this peak in stock performance as attributed to the coinciding development of the Covid-19 vaccine for distribution to the general public.'], className='list-item'),
+        html.Li(children=[
+                'Clusters of larger bubbles correspond to the timing of the mutating virus producing variants over the course of the pandemic.'], className='list-item'),
     ]),
 
 
