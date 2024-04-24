@@ -59,8 +59,13 @@ app.layout = html.Div(children=[
     html.Iframe(srcDoc=open("vis2.html").read(), id='graph2',
                 className='special-chart'),
     html.Ul(children=[
-        html.Li(children=['sample item'], className='list-item'),
-        html.Li(children=['sample item'], className='list-item'),
+        html.Li(children=['The variability for the COVID data was significantly less than that of the overdose data, and there was no clear correlation or any outstanding patterns between the two.'], className='list-item'),
+        html.Li(children=[
+            html.Li(children=[
+                    'The COVID data was also significantly more readable, so based off the movement of this graph there seemed to be no pandemic-related effect on overdose deaths during this time.'], className='sublist-item'),
+            html.Li(children=[
+                    'The movement in the COVID data can be attributed to events occuring in the context of the pandemic, but the overdose data appears to act independently of this.'], className='sublist-item'),
+        ], className='list-item'),
         html.Li(children=['sample item'], className='list-item'),
     ]),
 
@@ -96,8 +101,13 @@ app.layout = html.Div(children=[
     html.Iframe(srcDoc=open("vis5.html").read(), id='graph5',
                 className='final-chart'),
     html.Ul(children=[
-        html.Li(children=['sample item'], className='list-item'),
-        html.Li(children=['sample item'], className='list-item'),
+        html.Li(children=['Each cell in the heatmap represents the correlation coefficient between each variable, with shades of blue representing a negative correlation coefficient and shades of red representing a positive correlation coefficient.'], className='list-item'),
+        html.Li(children=['
+            html.Li(children=[
+                    'The stocks PJP, IHE, and PPH seem to be more positively correlated with each other (as indicated by the bottom right section of the heatmap) which can be attributed to the fact that these are all high-performing players in the context of technology stocks.'], className='sublist-item'),
+            html.Li(children=[
+                    'The stock AMGN seems to be negatively or only lightly correlated with the rest of the stocks, meaning their performance was irregular compared to its pharmaceutical counterparts during this time.'], className='sublist-item'),
+        '], className='list-item'),
         html.Li(children=['sample item'], className='list-item'),
     ]),
 
