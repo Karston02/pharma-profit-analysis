@@ -105,7 +105,7 @@ app.layout = html.Div(children=[
     html.Ul(children=[
         html.Li(children=['Each cell in the heatmap represents the correlation coefficient between each variable, with shades of blue representing a negative correlation coefficient and shades of red representing a positive correlation coefficient.'], className='list-item'),
         html.Li(children=[
-            'The stocks PJP, IHE, and PPH seem to be more positively correlated with each other (as indicated by the bottom right section of the heatmap) which can be attributed to the fact that these are all high-performing players in the context of technology stocks.'
+            'The stocks PJP, IHE, and PPH seem to be more positively correlated with each other (as indicated by the bottom right section of the heatmap) which can be attributed to the fact that these are all high-performing players.'
         ], className='list-item'),
         html.Li(children=[
             'The stock AMGN seems to be negatively or only lightly correlated with the rest of the stocks, meaning their performance was irregular compared to its pharmaceutical counterparts during this time.'
