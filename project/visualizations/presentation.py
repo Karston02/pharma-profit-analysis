@@ -109,7 +109,7 @@ app.layout = html.Div(children=[
             'The stock AMGN seems to be negatively or only lightly correlated with the rest of the stocks, meaning their performance was irregular compared to its pharmaceutical counterparts during this time.'
         ], className='sublist-item'),
         html.Li(children=['sample item'], className='list-item'),
-    ], className='your-class-name')
+    ]),
 
 
     ########################
