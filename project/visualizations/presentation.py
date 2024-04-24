@@ -48,7 +48,6 @@ app.layout = html.Div(children=[
             html.Li(children=[
                     'Other vaccine producers, such as Pfizer (PFE) and JNJ, did not have near the result as the other producers, which leads me to question the significance that COVID had on these results'], className='sublist-item'),
         ], className='list'),
-        html.Li(children=['sample item'], className='list-item'),
     ]),
 
 
@@ -66,7 +65,6 @@ app.layout = html.Div(children=[
             html.Li(children=[
                     'The movement in the COVID data can be attributed to events occuring in the context of the pandemic, but the overdose data appears to act independently of this.'], className='sublist-item'),
         ], className='list-item'),
-        html.Li(children=['sample item'], className='list-item'),
     ]),
 
     ###########
@@ -76,9 +74,11 @@ app.layout = html.Div(children=[
     html.Iframe(srcDoc=open("vis3.html").read(), id='graph3',
                 className='chart'),
     html.Ul(children=[
-        html.Li(children=['sample item'], className='list-item'),
-        html.Li(children=['sample item'], className='list-item'),
-        html.Li(children=['sample item'], className='list-item'),
+        html.Li(children=['The overdose-related deaths in the United States were not significantly affected by the pandemic, maintaining a constant, low level of fluctuation with respect to time.'], className='list-item'),
+        html.Li(children=[
+                'For the pandemic, we observe more patterned behavior and a larger range of fluctuation.'], className='list-item'),
+        html.Li(children=['There is no real correlation between the Covid-19 pandemic and the drug overdose patterns observed in the United States, supporting our hypothesis of their minimal/zero impact on the performance of pharmaceutical companies.'
+                          ], className='list-item'),
     ]),
 
     ###########
@@ -108,7 +108,6 @@ app.layout = html.Div(children=[
         html.Li(children=[
             'The stock AMGN seems to be negatively or only lightly correlated with the rest of the stocks, meaning their performance was irregular compared to its pharmaceutical counterparts during this time.'
         ], className='sublist-item'),
-        html.Li(children=['sample item'], className='list-item'),
     ]),
 
 
